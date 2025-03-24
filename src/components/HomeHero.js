@@ -1,6 +1,13 @@
 import React from "react";
 import "./../App.css"; // Import the associated CSS for styling
 
+// Importing images directly
+import linkedinIcon from "./../../src/assets/images/linkedin-dark.svg";
+import twitterIcon from "./../../src/assets/images/twitter-dark.svg";
+import youtubeIcon from "./../../src/assets/images/yt-dark.svg";
+import githubIcon from "./../../src/assets/images/github-dark.svg";
+import devIcon from "./../../src/assets/images/book-dark.svg";
+
 const HomeHero = () => {
   return (
     <section className="home-hero">
@@ -8,14 +15,20 @@ const HomeHero = () => {
         <h1 className="heading-primary">Hey, I'm Kamesh Pansare</h1>
         <div className="home-hero__info">
           <p className="text-primary">
-            A dedicated Software Developer focused on designing, developing, and maintaining high-performance software solutions. 
-            With a strong emphasis on problem-solving and collaboration, I create applications that drive innovation and deliver measurable results.
+            A dedicated Software Developer focused on designing, developing, and
+            maintaining high-performance software solutions. With a strong
+            emphasis on problem-solving and collaboration, I create applications
+            that drive innovation and deliver measurable results.
           </p>
         </div>
         <div className="home-hero__cta">
-          <a href="./#projects" className="btn btn--bg">Projects</a>
+          <a href="./#projects" className="btn btn--bg">
+            Projects
+          </a>
         </div>
       </div>
+
+      {/* Social Links */}
       <div className="home-hero__socials">
         <div className="home-hero__social">
           <a
@@ -25,7 +38,7 @@ const HomeHero = () => {
             target="_blank"
           >
             <img
-              src="./assets/svg/linkedin-dark.svg"
+              src={linkedinIcon}
               alt="Kamesh Pansare Linkedin Profile"
               className="home-hero__social-icon"
             />
@@ -39,7 +52,7 @@ const HomeHero = () => {
             target="_blank"
           >
             <img
-              src="./assets/svg/twitter-dark.svg"
+              src={twitterIcon}
               alt="Twitter Profile"
               className="home-hero__social-icon"
             />
@@ -53,7 +66,7 @@ const HomeHero = () => {
             target="_blank"
           >
             <img
-              src="./assets/svg/yt-dark.svg"
+              src={youtubeIcon}
               alt="Youtube Channel"
               className="home-hero__social-icon"
             />
@@ -67,7 +80,7 @@ const HomeHero = () => {
             target="_blank"
           >
             <img
-              src="./assets/svg/github-dark.svg"
+              src={githubIcon}
               alt="Github Profile"
               className="home-hero__social-icon"
             />
@@ -81,13 +94,14 @@ const HomeHero = () => {
             target="_blank"
           >
             <img
-              src="./assets/svg/book-dark.svg"
+              src={devIcon}
               alt="DEV.to Blog Profile"
               className="home-hero__social-icon"
             />
           </a>
         </div>
       </div>
+
       <div className="home-hero__mouse-scroll-cont">
         <div className="mouse"></div>
       </div>

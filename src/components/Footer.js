@@ -1,5 +1,12 @@
 import React from 'react';
 
+// Importing social icons
+import linkedinIcon from "./../../src/assets/images/linkedin-ico.png";
+import githubIcon from "./../../src/assets/images/github-ico.png";
+import twitterIcon from "./../../src/assets/images/twitter-ico.png";
+import blogIcon from "./../../src/assets/images/blog-ico.png";
+import youtubeIcon from "./../../src/assets/images/yt-ico.png";
+
 const Footer = () => {
   return (
     <footer className="main-footer">
@@ -17,7 +24,7 @@ const Footer = () => {
               >
                 <img
                   className="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
+                  src={linkedinIcon}
                   alt="Kamesh Pansare Linkedin Profile"
                 />
               </a>
@@ -28,7 +35,7 @@ const Footer = () => {
               >
                 <img
                   className="main-footer__icon"
-                  src="./assets/png/github-ico.png"
+                  src={githubIcon}
                   alt="Github Profile"
                 />
               </a>
@@ -39,7 +46,7 @@ const Footer = () => {
               >
                 <img
                   className="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
+                  src={twitterIcon}
                   alt="Twitter Profile"
                 />
               </a>
@@ -51,7 +58,7 @@ const Footer = () => {
               >
                 <img
                   className="main-footer__icon"
-                  src="./assets/png/blog-ico.png"
+                  src={blogIcon}
                   alt="DEV.to Blog Profile"
                 />
               </a>
@@ -62,7 +69,7 @@ const Footer = () => {
               >
                 <img
                   className="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/yt-ico.png"
+                  src={youtubeIcon}
                   alt="Youtube Channel"
                 />
               </a>

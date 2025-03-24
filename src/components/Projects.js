@@ -1,6 +1,9 @@
-import React from "react";
-import "./../App.css"; // Make sure to import the associated CSS for styling
 
+import React from "react";
+import "./../App.css"; // Importing CSS for styling
+import portfolioImg from "./../../src/assets/images/crown-template.jpeg";
+import flipkartImg from "./../../src/assets/images/dopefolio.jpeg";
+import streamflixImg from "./../../src/assets/images/wilsonport.jpeg";
 
 const Projects = () => {
   const projects = [
@@ -9,15 +12,15 @@ const Projects = () => {
       title: "PORTFOLIO",
       description:
         "A personal portfolio website showcasing my skills, experience, and projects.",
-      image: "./assets/jpeg/crown-template.jpeg",
+      image: portfolioImg,
       caseStudyLink: "https://github.com/Kameshpansare27/Portfolio.git",
     },
     {
       id: 2,
-      title: "FLIPCKART CLONE",
+      title: "FLIPKART CLONE",
       description:
         "A clone of the popular e-commerce website Flipkart, built to demonstrate my skills in frontend development.",
-      image:"./assets/jpeg/dopefolio.jpeg",
+      image: flipkartImg,
       caseStudyLink: "https://github.com/Kameshpansare27/Flipkart-clone.git",
     },
     {
@@ -25,11 +28,10 @@ const Projects = () => {
       title: "STREAMFLIX",
       description:
         "A clone of the popular streaming service Netflix, built to demonstrate my skills in frontend development and UI/UX design.",
-      image: "./assets/jpeg/wilsonport.jpeg",
+      image: streamflixImg,
       caseStudyLink: "https://github.com/Kameshpansare27/StreamFlix.git",
     },
   ];
-   
 
   return (
     <section id="projects" className="projects sec-pad">
@@ -38,13 +40,16 @@ const Projects = () => {
           <span className="heading-sec__main">Projects</span>
           <span className="heading-sec__sub">
             Here you will find some of the personal and client projects that I
-            created with each project containing its own case study.
+            created, with each project containing its own case study.
           </span>
         </h2>
 
         <div className="projects__content">
-          {projects.map((project) => (
-            <div className="projects__row" key={project.id}>
+          {projects.map((project, index) => (
+            <div
+              className={`projects__row ${index % 2 === 0 ? "zebra-light" : "zebra-dark"}`}
+              key={project.id}
+            >
               <div className="projects__row-img-cont">
                 <img
                   src={project.image}

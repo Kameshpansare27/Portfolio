@@ -237,7 +237,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../public/assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(./assets/images/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -462,7 +462,7 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../public/assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(./assets/images/common-bg.svg);
   background-size: cover;
   background-position: center
 }
@@ -581,7 +581,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../public/assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(./assets/images/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative
@@ -1095,4 +1095,20 @@ textarea {
 .experience__row-content-list-item i {
   margin-right: 10px;
   color: #666;
+}
+
+/* Zebra striping styles */
+.zebra-light {
+  background-color: #f9f9f9; /* Light stripe */
+}
+
+.zebra-dark {
+  background-color: #eaeaea; /* Dark stripe */
+}
+
+/* Add subtle hover effect for better UX */
+.projects__row:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }

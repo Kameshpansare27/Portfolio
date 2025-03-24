@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./../App.css"; // Importing CSS file for styling
 
+// Importing images directly
+import logoImg from "./../../src/assets/images/kamesh.jpg";
+import hamMenuIcon from "./../../src/assets/images/ham-menu.svg";
+import hamMenuCloseIcon from "./../../src/assets/images/ham-menu-close.svg";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Tracks if the menu is open or closed
   const [isHamMenuVisible, setIsHamMenuVisible] = useState(true); // Controls visibility of the hamburger and close icons
@@ -32,7 +37,7 @@ const Header = () => {
         >
           <div className="header__logo-img-cont">
   <img
-    src="./assets/jpeg/Kamesh.jpg"
+    src={logoImg}
     alt="Kamesh Pansare logo"
     className="header__logo-img"
   />
@@ -92,12 +97,12 @@ const Header = () => {
 
           <div className="header__main-ham-menu-cont" onClick={toggleMenu}>
             <img
-              src="./assets/svg/ham-menu.svg"
+              src={hamMenuIcon}
               alt="hamburger menu"
               className={`header__main-ham-menu ${isHamMenuVisible ? "" : "d-none"}`}
             />
             <img
-              src="./assets/svg/ham-menu-close.svg"
+              src={hamMenuCloseIcon}
               alt="hamburger menu close"
               className={`header__main-ham-menu-close ${isHamMenuVisible ? "d-none" : ""}`}
             />
