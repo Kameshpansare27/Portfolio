@@ -14,8 +14,7 @@ Version Control: Git
 Deployment: GitHub Pages
 
 # 📁 Project Structure
-
-    /public            → Static assets  
+  
     /src               → Source code  
      └── /components   → Reusable components (Header, Footer, Projects, etc.)  
      └── App.js        → Main entry file including all components  
